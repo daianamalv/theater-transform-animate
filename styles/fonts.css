@@ -1,0 +1,21 @@
+@font-face {
+  font-family: "VentiCF-DemiBold";
+
+  src: url("../fonts/VentiCF-DemiBold.woff") format("woff");
+}
+
+@font-face {
+ font-family: "SmoochSans-Light";
+
+ src: url("../fonts/SmoochSans-Light.woff") format("woff");
+}
+
+@font-face {
+  font-family: "VentiCF-Bold";
+
+  src: url("../fonts/VentiCF-Bold.woff") format("woff");
+}
+
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic');
+
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');

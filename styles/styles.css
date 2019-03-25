@@ -1,0 +1,298 @@
+@import "fonts.css";
+
+@import "reset.css";
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,700&subset=cyrillic');
+
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+
+* {
+  box-sizing: border-box;
+  transition: all 0.5s ease;
+}
+
+
+main {
+  max-width: 1440px;
+  margin: 0 auto;
+
+
+}
+
+body {
+
+  color: #FFF;
+  background: url('../styles/backone.png') -25px -50px;
+  background-size: calc(100% + 50px);
+
+
+  font-family: "SmoochSans-Light", sans-serif;
+  font-weight: 400;
+  /* overflow: hidden; */
+
+}
+
+a {
+  text-decoration: none;
+
+  color: #C4C4C4;
+}
+
+h1 {
+  padding-left: 20px;
+  color: #8FA18C;
+}
+
+h2 {
+
+  width: 40vw;
+  margin-bottom: 56px;
+
+  font-size: 50px;
+
+}
+
+p {
+  width: 40vw;
+  margin-bottom: 40px;
+
+  font-size: 24px;
+  line-height: 130%;
+  font-family: "VentiCF-DemiBold";
+}
+
+header {
+  position: fixed;
+  z-index: 100;
+
+  display: flex;
+
+  width: 100%;
+  padding: 20px 0 20px 0;
+
+  font-size: 30px;
+
+  justify-content: center;
+
+}
+
+.beginning {
+background-color: #2F392B;
+color: #B5C6B2;
+}
+
+.problem {
+  color: #B5C6B2;
+  margin-left: -200px;
+  margin-top: 200px;
+  position: absolute;
+  z-index: -1;
+  font-size: 100px;
+}
+
+span {
+position: absolute;
+font-size: 50px;
+font-family: "SmoochSans-Light", sans-serif;
+}
+
+.question {
+  font-family: "SmoochSans-Light", sans-serif;
+  height: 100vh;
+}
+
+.question a {
+  line-height: 90%;
+  margin-top: 500px;
+  text-align: center;
+  font-size: 45px;
+  border: 20px;
+}
+
+.question {
+  display: flex;
+  overflow: hidden;
+
+  margin-bottom: 30px;
+
+  justify-content: center;
+}
+
+.panel-text {
+  margin: 100px auto 100 auto;
+}
+
+.message {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	margin: 0 auto;
+	font-size: 70px;
+	color:#000;
+	}
+
+.fametext, .consertstext {
+  display: flex;
+  align-items: center;
+}
+
+.textstext {
+  margin: 120px 200px 0 100px;
+}
+
+.friendshiptext {
+  margin: 170px 200px 0 100px;
+}
+
+.slava {
+  padding-left: 10vw;
+}
+
+.two {
+  width: 500px;
+  height: 700px;
+}
+
+.ionka {
+  padding-left: 50px;
+}
+
+.all {
+margin-left: -500px;
+}
+
+.abstractrap {
+  /* margin: 200px 0; */
+  padding: 200px 0 200px 0;
+
+  text-align: center;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.abstractrap h2 {
+  width: 51vw;
+  margin: 0 auto;
+  margin-bottom: 56px;
+}
+
+.abstractrap a {
+  padding: 10px 20px;
+
+  color: #C4C4C4;
+  border-radius: 5px;
+  background-color: #000;
+}
+
+.abstractrap a + a {
+  color: #000;
+  background-color: #C4C4C4;
+
+  font-weight: 700;
+}
+
+footer {
+  padding-bottom: 30px;
+
+  text-align: center;
+
+  line-height: 130%;
+}
+
+.logosvg {
+  z-index: 99;
+
+  width: 24px;
+  height: 16px;
+  margin: 0 10px 0 10px;
+}
+
+@media (max-width: 1025px)  {
+
+  .slava {
+    padding-left: 6vw;
+  }
+
+  .all {
+    margin-left: -600px;
+
+  }
+
+  .friendshiptext {
+    margin: 170px 200px 0 123px;
+  }
+
+@media (max-width: 769px) {
+
+  header {
+    font-size: 18px;
+  }
+
+  h2 {
+    width: 40vw;
+    margin-bottom: 56px;
+
+    font-size: 24px;
+  }
+
+  p {
+    margin-bottom: 40px;
+
+    font-size: 18px;
+  }
+
+  .fame {
+    flex-direction: column;
+  }
+
+  .friendship {
+    flex-direction: column-reverse;
+  }
+
+  .slava, .all {
+    width: 100vw;
+    padding-left: 0;
+  }
+
+  .fame h2, .friendship h2, .fame p, .friendship p {
+    width: 66vw;
+  }
+
+  .fametext {
+    margin-top: 170px;
+    margin-left: 16vw;
+  }
+
+  .two {
+    width: 50vw;
+    height: 70vw;
+  }
+
+  .textstext, .consertstext {
+    margin-top: 100px;
+    margin-left: 8vw;
+   }
+
+   .ionka {
+     width: 50vw;
+     height: 60vw;
+   }
+
+   .all {
+     width: 100vw;;
+     margin-left: 0;
+   }
+
+   .friendshiptext {
+     margin-top: 100px;
+     margin-left: 16vw;
+   }
+
+
+
+
+
+
+
+
+}

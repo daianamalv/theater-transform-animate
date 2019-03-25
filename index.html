@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Театр Трансформ</title>
+    <script src="jquery.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="styles/styles.css">
+
+    <script type="text/javascript">
+
+        function changeRectanglesCSS() {
+        $("span").each(function() {
+          changeRectangleCSS($(this))
+        })
+      }
+
+
+      $(document).ready(function() {
+        let movementStrength = 60;
+        let height = movementStrength / $(window).height();
+        let width = movementStrength / $(window).width();
+        $("body").mousemove(function(e){
+          let pageX = e.pageX - ($(window).width() / 2);
+          let pageY = e.pageY - ($(window).height() / 2);
+          let newvalueX = width * pageX * -1 - 25;
+          let newvalueY = height * pageY * -1 - 50;
+          $('body').css("background-position", newvalueX+"px     "+newvalueY+"px");
+        });
+      });
+
+
+    $(function() {
+          $("span").each(function(index) {
+            let width  = Math.round(Math.random() * 1000)
+            let height = Math.round(Math.random() * 1000)
+            let x      = Math.round(Math.random() * 1000)
+            let y      = Math.round(Math.random() * 500)
+
+            let r      = Math.floor(Math.random() * 200)
+            let g      = Math.floor(Math.random() * 10)
+            let b      = Math.floor(Math.random() * 15)
+
+            let color  = [r, g, b].join()
+
+
+            $(this).css({
+              "top": y + "px",
+              "left": x + "px",
+              "width":  width + "px",
+              "height": height + "px",
+              "color": "rgb(" + color + ")"
+            })
+
+            $(this).on("mouseenter", function() {
+              let width  = Math.round(Math.random() * 1000)
+              let height = Math.round(Math.random() * 1000)
+              let x      = Math.round(Math.random() * 1000)
+              let y      = Math.round(Math.random() * 500)
+              let r      = Math.floor(Math.random() * 200)
+              let g      = Math.floor(Math.random() * 10)
+              let b      = Math.floor(Math.random() * 15)
+
+              let color  = [r, g, b].join()
+
+              $(this).css({
+                "top": y + "px",
+                "left": x + "px",
+                "width":  width + "px",
+                "height": height + "px",
+                "color": "rgb(" + color + ")"
+
+              })
+            })
+          })
+
+          $("span").hover(function () {
+          $(this).fadeTo("fast", Math.random());
+        })
+
+        })
+
+        let i = 0;
+    		let quotes = [
+    			"ЛУЧШЕ ЖИЗНИ",
+    			"КОТОРЫЙ ЛЕЧИТ",
+    			"ИЗМЕНИТ ЖИЗНЬ",
+    			"ГДЕ МОЖНО ЖИТЬ",
+    			"ИСКУССТВО ОТРАЖАТЬ",
+    			"ПАНТЕОН",
+    			"IS PUNK",
+    			"-<br>ВЕСЬ МИР",
+    			"НАЧИНАЕТСЯ<br>НЕ С ВЕШАЛКИ",
+    			"НУЖЕН ТЕБЕ"
+    		];
+
+    		$(function () {
+    			$('.panel-text').click(function () {
+    				i = Math.floor(Math.random() * quotes.length)
+    				showText(this, quotes[i]);
+    			});
+    		;
+    			function showText(panel, text) {
+    				var panel = $(panel);
+    				var point = $('.message', panel);
+    				panel.fadeOut(500, function () {
+    					point.html(text);
+    					panel.fadeIn(500);
+    				});
+    			}
+    		});
+    </script>
+  </head>
+  <body>
+    <header>
+      <h1>театр трансформ</h1>
+    </header>
+    <main>
+      <div class="question">
+          <h2 class="problem">ПОТЕРЯЛСЯ В ПРОБЛЕМАХ?</h2>
+
+          <span>злость</span>
+          <span>ревность</span>
+          <span>страх</span>
+          <span>ненависть</span>
+          <span>депрессия</span>
+          <span>потеря</span>
+          <span>одержимость</span>
+          <span>одиночество</span>
+          <span>безответная любовь</span>
+          <span>тлен</span>
+          <span>злость</span>
+          <span>ревность</span>
+          <span>страх</span>
+          <span>ненависть</span>
+          <span>депрессия</span>
+          <span>потеря</span>
+          <span>одержимость</span>
+          <span>одиночество</span>
+          <span>безответная любовь</span>
+          <span>тлен</span>
+          <span>злость</span>
+          <span>ревность</span>
+          <span>страх</span>
+          <span>ненависть</span>
+          <span>депрессия</span>
+          <span>потеря</span>
+          <span>одержимость</span>
+          <span>одиночество</span>
+          <span>безответная любовь</span>
+          <span>тлен</span>
+          <span>злость</span>
+          <span>ревность</span>
+          <span>страх</span>
+          <span>ненависть</span>
+          <span>депрессия</span>
+          <span>потеря</span>
+          <span>одержимость</span>
+          <span>одиночество</span>
+          <span>безответная любовь</span>
+          <span>тлен</span>
+          <span>злость</span>
+          <span>ревность</span>
+          <span>страх</span>
+          <span>ненависть</span>
+          <span>депрессия</span>
+          <span>потеря</span>
+          <span>одержимость</span>
+          <span>одиночество</span>
+          <span>безответная любовь</span>
+          <span>тлен</span>
+
+
+            <a href="#begin">их растворит<br>ТЕАТР</a>
+
+        </div>
+
+
+
+
+      <div id="begin" class="beginning">
+        <div class="textstext">
+          <h2>#шаг первый: признание проблемы</h2>
+          <p>прежде, чем </p>
+            <p></p>
+          </div>
+        </div>
+        <div class="steptwo">
+          <div class="steptwotext">
+            <h2></h2>
+            <p></p>
+            <p></p>
+          </div>
+
+        </div>
+
+            <div class="message">
+                ВЫБЕРИ СВОЙ СПЕКТАКЛЬ
+                <!-- </div>
+
+                <img class="image" src="images/боль буквы.jpg" width="200" height="300">
+                <img class="image" src="images/тягость буквы.jpg" width="200" height="300">
+                <img class="image" src="images/про смерть буквы.jpg" width="200" height="300">
+          </div> -->
+        </div>
+
+          <div class="panel-text">
+            <div class="message">
+              ТРАНСФОРМ
+            </div>
+          </div>
+
+
+        <a href="#top">наверх</a>
+        <footer>
+          </footer>
+    </main>
+  </body>
+</html>

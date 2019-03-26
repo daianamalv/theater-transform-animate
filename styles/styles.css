@@ -227,15 +227,15 @@ footer {
 
 @media (min-width: 1440px) {
 
-  .question a {
-    margin-top: 700px;
+.question a {
+  margin-top: 700px;
 }
 
-.beginning p, .beginning p {
+.beginning p, .steptwo p, .stepthree p {
   font-size: 80px;
 }
 
-.beginning h2, .beginning h2 {
+.beginning h2, .steptwo h2, .stepthree h2 {
   font-size: 100px;
 }
 

@@ -78,10 +78,6 @@ header {
 
 }
 
-/* .choose p {
-  margin: 100px 0 0 200px;
-} */
-
 .beginning, .steptree {
   height: 90vh;
   width: 100vw;
@@ -220,7 +216,7 @@ footer {
   line-height: 130%;
 }
 
-@media (min-width: 2560px) {
+@media (min-width: 1440px) {
 
   .question a {
     margin-top: 1000px;

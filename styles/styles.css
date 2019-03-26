@@ -78,6 +78,10 @@ header {
 
 }
 
+/* .choose p {
+  margin: 100px 0 0 200px;
+} */
+
 .beginning, .steptree {
   height: 90vh;
   width: 100vw;
@@ -131,12 +135,6 @@ font-family: "SmoochSans-Light", sans-serif;
 font-size: 50px;
 }
 
-.question {
-  height: 100vh;
-
-  font-family: "SmoochSans-Light", sans-serif;
-}
-
 .question a {
   margin-top: 550px;
 
@@ -149,6 +147,9 @@ font-size: 50px;
 }
 
 .question {
+  height: 100vh;
+
+  font-family: "SmoochSans-Light", sans-serif;
   display: flex;
   overflow: hidden;
 
@@ -162,7 +163,7 @@ font-size: 50px;
 }
 
 .message {
-  padding: 50px;
+  padding: 30px;
 
   text-align: center;
 
@@ -175,8 +176,19 @@ font-size: 50px;
 
   .choose {
     height: 70vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
   }
 
+.choose p {
+  text-align: center;
+  font-size: 30px;
+}
+
+.top {
+  padding-bottom: 20px;
+}
 
   .question_one, .question_two {
     margin-top: 50px;
@@ -185,6 +197,7 @@ font-size: 50px;
   .question_one p, .question_two p {
     width: 40vw;
     margin-right: 10px;
+    padding-bottom: 20px;
   }
 
   .third {
@@ -223,6 +236,10 @@ h2 {
 
 
 @media (max-width: 769px) {
+
+  span {
+    font-size: 40px;
+  }
 
   body {
     background-size: none;
@@ -284,5 +301,10 @@ h2 {
   	}
 
 
+  @media (max-width: 320px) {
+    .question {
+      height: 70vw;
+    }
+  }
 
 }

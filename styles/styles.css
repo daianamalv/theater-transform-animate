@@ -11,18 +11,14 @@
   transition: all 0.5s ease;
 }
 
-
 main {
   max-width: 1440px;
   margin: 0 auto;
-
-
 }
 
 body {
-
   color: #FFF;
-  background: url('../styles/backone.png') -25px -50px;
+  background: url('../images/backone.png') -25px -50px;
   background-size: calc(100% + 50px);
 
 
@@ -34,6 +30,7 @@ body {
 
 a {
   text-decoration: none;
+  font-size: 30px;
 
   color: #C4C4C4;
 }
@@ -50,6 +47,10 @@ h2 {
 
   font-size: 50px;
 
+}
+
+h3 {
+  font-size: 40px;
 }
 
 p {
@@ -76,9 +77,31 @@ header {
 
 }
 
-.beginning {
-background-color: #2F392B;
-color: #B5C6B2;
+.beginning, .steptree {
+  height: 90vh;
+  background-color: #79C99E;
+  color: #4D5359;
+  padding: 120px 200px 0 100px;
+}
+
+.feelanger, .feelconfuse {
+  height: 70vh;
+  color: #B5C6B2;
+  display: flex;
+  align-items: center;
+}
+
+.feelanger h2, .feelconfuse h2 {
+  width: 900px;
+  text-align: center;
+  margin-left: 200px;
+}
+
+.steptwo {
+  height: 90vh;
+  background-color: #508484;
+  color: #FFF;
+  padding: 120px 200px 0 100px;
 }
 
 .problem {
@@ -103,7 +126,7 @@ font-family: "SmoochSans-Light", sans-serif;
 
 .question a {
   line-height: 90%;
-  margin-top: 500px;
+  margin-top: 550px;
   text-align: center;
   font-size: 45px;
   border: 20px;
@@ -125,10 +148,39 @@ font-family: "SmoochSans-Light", sans-serif;
 .message {
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 700;
-	margin: 0 auto;
 	font-size: 70px;
-	color:#000;
+	color:#fff;
+  text-align: center;
+  padding: 50px;
 	}
+
+  .choose {
+    height: 70vh;
+  }
+
+
+  .question_one, .question_two {
+    margin-top: 50px;
+  }
+
+  .question_one p, .question_two p {
+    width: 40vw;
+    margin-right: 10px;
+  }
+
+  .third {
+    /* position: relative; */
+
+    display: flex;
+    flex-direction: row;
+
+    width: 100vw;
+    margin-bottom: 10vw;
+
+    justify-content: center;
+    background-color: #000;
+  }
+
 
 .fametext, .consertstext {
   display: flex;

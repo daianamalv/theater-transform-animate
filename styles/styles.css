@@ -209,6 +209,10 @@ footer {
 
 @media (max-width: 1025px) {
 
+  body {
+    background-size: none;
+  }
+
   .problem {
     margin-left: -150px;
 }

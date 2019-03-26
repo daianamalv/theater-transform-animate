@@ -107,7 +107,6 @@ header {
 
 .steptwo {
   height: 90vh;
-  padding: 120px 200px 0 100px;
 
   color: #FFF;
   background-color: #508484;
@@ -235,7 +234,7 @@ footer {
 }
 
 .beginning p, .steptwo p, .stepthree p {
-  font-size: 80px;
+  font-size: 60px;
 }
 
 .beginning h2, .steptwo h2, .stepthree h2 {

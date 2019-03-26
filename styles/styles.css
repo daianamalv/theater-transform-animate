@@ -13,7 +13,6 @@
 }
 
 main {
-  max-width: 1440px;
   margin: 0 auto;
 }
 
@@ -24,7 +23,8 @@ body {
 
   font-family: "SmoochSans-Light", sans-serif;
   font-weight: 400;
-  /* overflow: hidden; */
+  overflow-x: hidden;
+  overflow-y: overlay;
 
 }
 
@@ -80,6 +80,7 @@ header {
 
 .beginning, .steptree {
   height: 90vh;
+  width: 100vw;
   padding: 120px 200px 0 100px;
 
   color: #4D5359;

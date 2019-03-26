@@ -79,6 +79,14 @@ header {
 
 }
 
+ul {
+  display: flex;
+
+  padding: 40px 0 40px;
+
+  justify-content: space-around;
+}
+
 .beginning, .steptwo, .stepthree {
   width: 100vw;
   height: 90vh;

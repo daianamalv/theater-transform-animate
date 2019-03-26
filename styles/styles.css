@@ -220,6 +220,13 @@ footer {
   line-height: 130%;
 }
 
+@media (min-width: 2560px) {
+
+  .question a {
+    margin-top: 1000px;
+}
+
+
 @media (max-width: 1025px) {
 
   body {

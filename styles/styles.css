@@ -231,11 +231,11 @@ footer {
     margin-top: 700px;
 }
 
-p {
+.feelanger p, .feelconfuse p {
   font-size: 80px;
 }
 
-h2 {
+.feelanger h2, .feelconfuse h2 {
   font-size: 100px;
 }
 

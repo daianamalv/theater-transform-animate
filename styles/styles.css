@@ -8,6 +8,7 @@
 
 * {
   box-sizing: border-box;
+
   transition: all 0.5s ease;
 }
 
@@ -21,7 +22,6 @@ body {
   background: url('../images/backone.png') -25px -50px;
   background-size: calc(100% + 50px);
 
-
   font-family: "SmoochSans-Light", sans-serif;
   font-weight: 400;
   /* overflow: hidden; */
@@ -30,18 +30,19 @@ body {
 
 a {
   text-decoration: none;
-  font-size: 30px;
 
   color: #C4C4C4;
+
+  font-size: 30px;
 }
 
 h1 {
   padding-left: 20px;
+
   color: #8FA18C;
 }
 
 h2 {
-
   width: 40vw;
   margin-bottom: 56px;
 
@@ -57,9 +58,9 @@ p {
   width: 40vw;
   margin-bottom: 40px;
 
+  font-family: "VentiCF-DemiBold";
   font-size: 24px;
   line-height: 130%;
-  font-family: "VentiCF-DemiBold";
 }
 
 header {
@@ -79,57 +80,71 @@ header {
 
 .beginning, .steptree {
   height: 90vh;
-  background-color: #79C99E;
-  color: #4D5359;
   padding: 120px 200px 0 100px;
+
+  color: #4D5359;
+  background-color: #79C99E;
 }
 
 .feelanger, .feelconfuse {
-  height: 70vh;
-  color: #B5C6B2;
   display: flex;
+
+  height: 70vh;
+
+  color: #B5C6B2;
+
   align-items: center;
 }
 
 .feelanger h2, .feelconfuse h2 {
-  width: 900px;
+  width: 90vw;
+  padding: 20px;
+
   text-align: center;
-  margin-left: 200px;
 }
 
 .steptwo {
   height: 90vh;
-  background-color: #508484;
-  color: #FFF;
   padding: 120px 200px 0 100px;
+
+  color: #FFF;
+  background-color: #508484;
 }
 
 .problem {
-  color: #B5C6B2;
-  margin-left: -200px;
-  margin-top: 200px;
   position: absolute;
   z-index: -1;
+
+  margin-top: 200px;
+  margin-left: -200px;
+
+  color: #B5C6B2;
+
   font-size: 100px;
 }
 
 span {
 position: absolute;
-font-size: 50px;
+
 font-family: "SmoochSans-Light", sans-serif;
+font-size: 50px;
 }
 
 .question {
-  font-family: "SmoochSans-Light", sans-serif;
   height: 100vh;
+
+  font-family: "SmoochSans-Light", sans-serif;
 }
 
 .question a {
-  line-height: 90%;
   margin-top: 550px;
+
   text-align: center;
-  font-size: 45px;
+
   border: 20px;
+
+  font-size: 45px;
+  line-height: 90%;
 }
 
 .question {
@@ -146,12 +161,15 @@ font-family: "SmoochSans-Light", sans-serif;
 }
 
 .message {
-	font-family: 'Montserrat', sans-serif;
-	font-weight: 700;
-	font-size: 70px;
-	color:#fff;
-  text-align: center;
   padding: 50px;
+
+  text-align: center;
+
+	color:#fff;
+
+	font-family: 'Montserrat', sans-serif;
+	font-size: 70px;
+	font-weight: 700;
 	}
 
   .choose {
@@ -169,79 +187,16 @@ font-family: "SmoochSans-Light", sans-serif;
   }
 
   .third {
-    /* position: relative; */
-
     display: flex;
     flex-direction: row;
 
     width: 100vw;
     margin-bottom: 10vw;
 
-    justify-content: center;
     background-color: #000;
+
+    justify-content: center;
   }
-
-
-.fametext, .consertstext {
-  display: flex;
-  align-items: center;
-}
-
-.textstext {
-  margin: 120px 200px 0 100px;
-}
-
-.friendshiptext {
-  margin: 170px 200px 0 100px;
-}
-
-.slava {
-  padding-left: 10vw;
-}
-
-.two {
-  width: 500px;
-  height: 700px;
-}
-
-.ionka {
-  padding-left: 50px;
-}
-
-.all {
-margin-left: -500px;
-}
-
-.abstractrap {
-  /* margin: 200px 0; */
-  padding: 200px 0 200px 0;
-
-  text-align: center;
-
-  justify-content: center;
-  align-items: center;
-}
-
-.abstractrap h2 {
-  width: 51vw;
-  margin: 0 auto;
-  margin-bottom: 56px;
-}
-
-.abstractrap a {
-  padding: 10px 20px;
-
-  color: #C4C4C4;
-  border-radius: 5px;
-  background-color: #000;
-}
-
-.abstractrap a + a {
-  color: #000;
-  background-color: #C4C4C4;
-
-  font-weight: 700;
-}
 
 footer {
   padding-bottom: 30px;
@@ -251,28 +206,16 @@ footer {
   line-height: 130%;
 }
 
-.logosvg {
-  z-index: 99;
+@media (max-width: 1025px) {
 
-  width: 24px;
-  height: 16px;
-  margin: 0 10px 0 10px;
+  .problem {
+    margin-left: -150px;
 }
 
-@media (max-width: 1025px)  {
+h2 {
+  font-size: 35px;
+}
 
-  .slava {
-    padding-left: 6vw;
-  }
-
-  .all {
-    margin-left: -600px;
-
-  }
-
-  .friendshiptext {
-    margin: 170px 200px 0 123px;
-  }
 
 @media (max-width: 769px) {
 
@@ -280,70 +223,56 @@ footer {
     font-size: 18px;
   }
 
-  h2 {
-    width: 40vw;
-    margin-bottom: 56px;
+  .problem {
+    margin-top: 200px;
+    margin-left: -100px;
 
-    font-size: 24px;
+    color: #B5C6B2;
+
+    font-size: 80px;
+  }
+
+  h2 {
+    font-size: 35px;
   }
 
   p {
+    width: 70vw;
     margin-bottom: 40px;
 
-    font-size: 18px;
+    font-size: 25px;
   }
 
-  .fame {
+  .beginning, .steptwo, .steptree {
+    padding: 80px 200px 0 80px;
+
+  }
+
+  .feelanger h2, .feelconfuse h2 {
+    width: 900px;
+    margin-left: 50px;
+
+    text-align: center;
+  }
+
+  .question a {
+    font-size: 30px;
+  }
+
+  .third {
     flex-direction: column;
+    padding-left: 30px;
   }
 
-  .friendship {
-    flex-direction: column-reverse;
+  .question_one p, .question_two p {
+    width: 70vw;
   }
 
-  .slava, .all {
-    width: 100vw;
-    padding-left: 0;
-  }
-
-  .fame h2, .friendship h2, .fame p, .friendship p {
-    width: 66vw;
-  }
-
-  .fametext {
-    margin-top: 170px;
-    margin-left: 16vw;
-  }
-
-  .two {
-    width: 50vw;
-    height: 70vw;
-  }
-
-  .textstext, .consertstext {
-    margin-top: 100px;
-    margin-left: 8vw;
-   }
-
-   .ionka {
-     width: 50vw;
-     height: 60vw;
-   }
-
-   .all {
-     width: 100vw;;
-     margin-left: 0;
-   }
-
-   .friendshiptext {
-     margin-top: 100px;
-     margin-left: 16vw;
-   }
-
-
-
-
-
+  .message {
+    padding: 50px;
+  	font-size: 50px;
+  	font-weight: 700;
+  	}
 
 
 

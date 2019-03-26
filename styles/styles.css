@@ -220,6 +220,10 @@ h2 {
 
 @media (max-width: 769px) {
 
+  body {
+    background-size: none;
+  }
+
   header {
     font-size: 18px;
   }
